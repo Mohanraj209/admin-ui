@@ -58,7 +58,7 @@ jobs:
   sonar-analysis:
     needs: build-admin-ui
     if: "${{ github.event_name != 'pull_request' }}"
-    uses: mosip/kattu/.github/workflows/npm-sonar-analysis.yml@develop
+    uses: Mohanraj209/kattu/.github/workflows/npm-sonar-analysis.yml@develop
     with:
       SERVICE_LOCATION: admin-ui
       SONAR_URL: 'https://sonarcloud.io'
